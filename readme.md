@@ -1,2 +1,2 @@
-===============SIH=================
+
 SENTIMENT ANALYSIS FRONTEND

@@ -2,7 +2,7 @@ import React from 'react'
 
 function ServiceInfo(props) {
   return (
-    <div className='h-[500px] w-[350px] rounded-md relative hover:shadow-md  hover:shadow-purple hover:-translate-y-5 transition-all'>
+    <div className='h-[500px] w-[350px] rounded-md relative  hover:shadow-purple hover:-translate-y-5 transition-all'>
       <div className='w-[350px] h-[1px] absolute bottom-0 bg-gradient-to-r from-transparent via-purple-400 to-transparent '></div>
       <img className='w-full h-[250px] object-cover' src={props.url}>
       </img>

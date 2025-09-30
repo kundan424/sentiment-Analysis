@@ -2,12 +2,8 @@
 import React from 'react';
 import WordCloud from 'react-d3-cloud';
 
-// react-d3-cloud uses a function to determine font size.
 const fontSizeMapper = (word) => Math.sqrt(word.value) * 5;
 
-// This function determines the rotation of a word.
-// It will randomly return either 0 degrees or -90 degrees.
-// const rotate = () => (Math.random() > 0.5 ? 0 : -90);
 const rotate = () => 0;
 
 export default function WordCloudComponent({ words }) {

@@ -4,9 +4,9 @@ import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from "recha
 
 // Define the colors to match your original chart
 const COLORS = {
-  positive: "#36A2EB", // Blue for Positive
-  neutral: "#C9CBCF",  // Grey for Neutral
-  negative: "#FF6384", // Red for Negative
+  positive: "green", 
+  neutral: "#C9CBCF",  
+  negative: "red", 
 };
 
 export default function SentimentChart({ counts }) {

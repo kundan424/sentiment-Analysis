@@ -43,7 +43,7 @@ function Navbar() {
      !scrolled && <div className="w-[90%] absolute h-[2px] bottom-1  bg-gradient-to-r from-transparent via-purple-200 via-purple-600 dark:via-purple-400 via-purple-200 to-transparent"></div>
 }
       <div className="w-fit h-full">
-        <h1 className="text-2xl font-bold text-neutral-700 dark:text-neutral-500 ">SentimentAlYsis</h1>
+        <h1 className="text-2xl font-bold text-neutral-700 dark:text-neutral-500 ">XSentiment</h1>
       </div>
       <Switch />
     </motion.nav>

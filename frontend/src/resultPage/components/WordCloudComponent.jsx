@@ -15,7 +15,7 @@ export default function WordCloudComponent({ words }) {
   console.log('Words received by WordCloud:', words); // Debug log
     
   return (
-    <div style={{ width: "100%", height: "400px" }}>
+    <div style={{ width: "100%", height: "500px" }}>
         <WordCloud
             data={words}
             width={500}

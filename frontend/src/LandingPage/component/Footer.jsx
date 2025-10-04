@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-32">
           {/* Left Section */}
           <div className="flex flex-col justify-between">
-            <h2 className="text-xl font-normal tracking-wide">XSentiment</h2>
+            <h2 className="text-5xl font-normal tracking-wide">XSentiment</h2>
             <h3 className="text-5xl font-light mt-32">Stay Connected</h3>
           </div>
 
@@ -46,7 +46,7 @@ export default function Footer() {
         {/* Bottom border and copyright */}
         <div className="border-t border-black mt-16 pt-8">
           <p className="text-xs text-right">
-            © 2035 by XSentiment. Powered and secured by <a href="#" className="underline hover:opacity-70">Wix</a>
+            © 2025 by XSentiment. 
           </p>
         </div>
       </div>

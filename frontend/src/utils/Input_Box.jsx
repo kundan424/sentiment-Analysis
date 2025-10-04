@@ -27,6 +27,7 @@ const Input = ({onsubmit, onFileUpload, value, onchange}) => {
                     placeholder="Enter the post url"
                     value={value}
                     type="text"
+                    className='!text-black'
                     id="messageInput"
                     onChange={onchange}
                 />

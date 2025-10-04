@@ -3,7 +3,7 @@ import { fetchRepliesFromUrl } from '../../api';
 import '../styles/inputForm.css'
 import Input from '../../utils/Input_Box';
 
-function InputForm({ onAnalysisRequest }) {
+function InputForm({ onAnalysisRequest ,setIsLoading}) {
 
     const [postUrl, setPostUrl] = useState("");
     const [error, setError] = useState("");
@@ -30,7 +30,7 @@ function InputForm({ onAnalysisRequest }) {
         if (!file) {
             return;
         }
-
+        console.log(file)
         setError('');
         const reader = new FileReader();
 
@@ -40,8 +40,12 @@ function InputForm({ onAnalysisRequest }) {
                 if (!Array.isArray(comments)) {
                     throw new Error("JSON file must contain an array of comments.");
                 }
+                setIsLoading(true)
+                console.log(comments)
                 onAnalysisRequest(comments); // Send the parsed comments to the parent
+                console.log(comments)
             } catch (err) {
+                console.log("there is a error ",err)
                 setError('Error parsing JSON file. Ensure it is a valid array of strings.');
             }
         };
@@ -54,7 +58,7 @@ function InputForm({ onAnalysisRequest }) {
             onsubmit={handleUrlSubmit}
             onFileUpload={handleFileUpload}
             value={postUrl}
-            onchange={(e) => setPostUrl(e.target.value)}
+            onchange={(e)=>setPostUrl(e.target.value)}
         />
         </div>
     )
